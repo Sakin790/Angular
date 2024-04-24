@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
@@ -11,6 +11,7 @@ import { NavbarComponent } from './navbar/navbar.component';
   imports: [
     RouterOutlet,
     RouterLink,
+    RouterLinkActive,
     HomeComponent,
     AboutComponent,
     ContactComponent,
