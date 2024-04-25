@@ -1,14 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-
+import { HomeComponent } from './home/home.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, HomeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'AngularCore';
+  constructor() {
+    console.log('Constractor Called');
+  }
+
+  @HostListener('click', ['$event'])
+  show() {
+    alert('Object Click');
+  }
 }
