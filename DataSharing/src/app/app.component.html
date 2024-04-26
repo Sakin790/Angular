@@ -1,11 +1,14 @@
 <h1>Home Components</h1>
+<button (click)="login()">Login</button>
+<button (click)="logout()">Logout</button>
 
-@if(true){
-<div><h2>if block exicuted</h2></div>
+@if(isLoggedin){
+<div>
+  <h1>Welcome</h1>
+</div>
 }@else {
-<h2>else block exicuted</h2>
-} @if (isLoggedin) {
-<div>Home Page</div>
-}@else{
-<div><h2>Loging Firsts</h2></div>
+<div>
+  <h1>Please Login</h1>
+</div>
 }
+7

@@ -12,4 +12,12 @@ export class AppComponent {
   title = 'DataSharing';
   name: string = 'Sakin';
   isLoggedin: boolean = false;
+
+  login() {
+    this.isLoggedin = true;
+  }
+  logout() {
+    this.isLoggedin = false;
+  }
+  
 }
