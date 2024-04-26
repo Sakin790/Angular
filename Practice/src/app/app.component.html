@@ -1,0 +1,27 @@
+<h1>{{ title }}</h1>
+
+<button (click)="showName()">Show</button>
+
+@if(isLoggedin){
+<div>
+  <h1>Please Login</h1>
+</div>
+}@else{
+<h1>Welcome home</h1>
+}
+
+<h3>
+  @for (emp of empolyee; track emp.id) {
+  <h1>{{ emp.id }}-{{ emp.name }}</h1>
+  }
+</h3>
+
+<button (click)="showEmp()">Show EMP</button>
+
+@if(gender1==="male"){
+<h1>You r male</h1>
+<button (click)="chnageGen()">Change Gender</button>
+}@else {
+<h1>You r Female</h1>
+<button (click)="chnageGen()">Change Gender</button>
+}
