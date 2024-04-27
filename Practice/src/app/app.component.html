@@ -24,11 +24,11 @@
 }@else {
 <h1>You r Female</h1>
 <button (click)="chnageGen()">Change Gender</button>
-}
+} <> Count : {{ count }}
+<button (click)="increment()">Increment</button>
+<button (click)="decrement()">Decrement</button>
+<button (click)="reset()">Reset</button>
 
-<div>
-  Count : {{ count }}
-  <button (click)="increment()">Increment</button>
-  <button (click)="decrement()">Decrement</button>
-  <button (click)="reset()">Reset</button>
-</div>
+@if(count>=10){
+<h1>Count is Less Than 10</h1>
+}@else { count is More than 10 }
