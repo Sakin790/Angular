@@ -33,4 +33,22 @@ export class AppComponent {
   chnageGen() {
     this.gender1 = this.gender2;
   }
+
+  student: any[] = [
+    { ID: 1, Class: '1', GRP: 'Science', isRegular: false },
+    { ID: 2, Class: '6', GRP: 'Arts', isRegular: true },
+    { ID: 3, Class: '7', GRP: 'Bussness', isRegular: false },
+  ];
+
+  count: number = 0;
+
+  increment() {
+    this.count++;
+  }
+  decrement() {
+    this.count--;
+  }
+  reset() {
+    this.count = 0;
+  }
 }
