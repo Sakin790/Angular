@@ -40,6 +40,7 @@ export class AppComponent {
     { ID: 3, Class: '7', GRP: 'Bussness', isRegular: false },
   ];
 
+  //student:any
   count: number = 0;
 
   increment() {
