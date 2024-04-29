@@ -11,4 +11,10 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'Hello World...';
   score: number = 1000;
+
+  empolyee: any = {
+    name: 'Sakin',
+    Age: 22,
+    State: 'BD',
+  };
 }
